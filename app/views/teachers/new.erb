@@ -1,0 +1,33 @@
+<div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+<div class="signup">
+    <h1>Sign Up!</h1>
+
+    <% if @errors %>
+    <% @errors.each do |error| %>
+        <%= error %><br>
+    <% end %>
+    <% end %>
+
+    <%= form_for @teacher do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        <br>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+        <br>
+        <%= f.label :teacher %>
+        <%= f.text_field :teacher_name %>
+        <br>
+        <%= f.label :subject %>
+        <%= f.text_field :subject %>
+        <br>
+        <%= f.label :room %>
+        <%= f.number_field :room %>
+        <br>
+        <%=f.submit class:"button"%><br>
+
+        
+        
+    <%end%>
+    </div>
+</div>

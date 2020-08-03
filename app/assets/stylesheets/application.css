@@ -1,0 +1,223 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+/*  
+* {
+    font-family: 'Lora', serif;
+   
+    
+} */
+body {
+
+background-image: url("kudos3.png");
+background-repeat: no-repeat;
+/* background-attachment: scroll, local; */
+
+}
+/* Font for student page */
+.font {
+    font-family: 'Lora', serif;
+}
+
+/* NAV-BAR */
+
+.navbar li {
+    
+    list-style-type: none;
+
+  
+  
+}
+li a {
+    padding:  16px;
+    /* width: 500px; */
+    /* margin-right: 0px; */
+    /* background-color: gray; */
+    color:gray;
+
+    
+}
+
+.flex {
+    display: flex;
+    
+    
+}
+/* sentence under Kudo Logo */
+.space {
+    padding-top: 360px;
+    padding-left: 260px;
+    font-size: 18px;
+    color:gray;
+}
+/* div space */
+.container-space {
+    padding-top: 145px;
+}
+
+/* Click to see students line */
+.click{
+text-align: center;
+}
+
+/* Students clickable link */
+.students-link {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+}
+
+.button1 {
+    margin-left: 42%;
+    font-size: 20px;
+    background-color:gray;
+    color: white;
+    padding: 12px 65px;
+    border-radius: 12px;
+    margin-bottom: 150px;
+}
+
+
+/* Button on all pages */
+.button{
+    font-size: 15px;
+    background-color:gray;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 12px;
+
+
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+   padding-top: 50px;
+  padding: 50px;
+  color:white;
+  background-color:gray
+}
+/* ----------------Students Show Page ------------------*/
+
+.space-students-show{
+    padding-top: 560px;
+    padding-left: 260px;
+}
+
+.student-name{
+    text-align: center;
+    font-family:  'Lora', serif;
+
+}
+.dotted {
+    border: 1px dashed tan;
+}
+.hr {
+    border: 1px dashed tan
+}
+.kudo {
+    text-align: center;
+    font-family: 'Catamaran', sans-serif;
+
+}
+.italic-kudo{
+    font-style: italic;
+    color:#107555;
+    font-weight: bold;
+}
+
+
+/* ----------TEACHER SHOW------------ */
+
+
+.space-teachers-show{
+
+    padding-top: 560px;
+    padding-left: 260px;
+
+}
+
+.teacher-name {
+    text-align: center;
+    font-family:  'Lora', serif;
+}
+
+.button2 {
+    
+  
+
+
+    font-size: 15px;
+    background-color: #EBC9CD;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 12px;
+}
+
+
+.home {
+    color: gray;
+    padding: 25px;
+}
+
+/* ---------EDIT FORM---------- */
+
+.space-edit-form{
+    padding-top: 560px;
+    padding-left: 260px;
+    
+
+
+}
+.contagious {
+    font-style: italic;
+    color:#107555;
+    font-weight: bold;
+}
+
+/* ----------NEW SPACE FORM----------- */
+
+.space-new-form {
+    padding-top: 560px;
+    padding-left: 260px;
+   
+}
+
+.contagious {
+    font-style: italic;
+    color:#107555;
+    font-weight: bold;
+}
+
+
+/* -----------------------LOGIN-------------- */
+
+.login {
+    padding-top: 560px;
+    
+}
+
+
+/* ---------SIGNUP ------------- */
+
+.signup {
+    
+        padding-top: 560px;
+        
+    
+}

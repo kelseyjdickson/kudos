@@ -1,0 +1,15 @@
+<div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+<div class="login">
+<h2>Log In</h2>
+
+    <%= form_tag sessions_path do %>
+    <%= label_tag :username %>
+    <%= text_field_tag :username %>
+    <br><br>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <br><br>
+    <%= submit_tag "Log In" ,class:"button"%>
+    <% end %>
+    </div>
+</div>

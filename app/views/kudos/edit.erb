@@ -1,0 +1,35 @@
+<div class="space-edit-form" >
+</div >
+
+
+<div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+<h1>Edit a Kudos!</h1>
+<p class="contagious">Kudos are contagious, so let's give one..<p>
+<hr>
+
+<%= link_to "Home", students_path,class:"home"%>
+
+<%= form_with model: @kudo do |f| %>
+    
+    <%= f.label :student_id%>
+    <%= f.collection_select :student_id, Student.all, :id, :name%>
+     
+       
+   
+  
+    <br>
+    <%= f.label :teacher_id%>
+    <%= f.collection_select :teacher_id, Teacher.all, :id, :teacher_name%><br>
+    
+
+   
+    <%= f.label :kudos %>
+    <%= f.text_area :kudo ,size: "30x5"%>
+  
+   
+    <br>
+    
+    <%=  f.submit "Edit Kudo",class:"button" %>
+    
+<% end %>
+</div>

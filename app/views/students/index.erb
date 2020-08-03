@@ -1,0 +1,41 @@
+<div class="font">
+<nav class="navbar">
+    <ul class="flex">
+        
+        
+    
+        
+       
+    </ul>
+</nav>
+<div class="space">
+    <p> Kudos for students can create a continuous loop of positivity that spreads good vibes throughout the classroom.<p>
+</div>
+
+<div class="container-space">
+    <div class="click">
+        <h2>Click here to see a list of our Students<h2>
+    </div>
+</div>
+
+
+    <% @students.each do |student| %>
+    <div class="students-link" >
+     <%= link_to student.name, student_path(student)  %><br></div>
+    <%end%>
+</div>
+
+<br>
+
+ <%= button_to "Create Kudos" , new_kudo_path, :method => "get",class:"button1"%>
+
+<%# ☞ <%= link_to "Create a Kudos", new_kudo_path %>
+<%# ☞ <%= link_to "Edit a Kudos", edit_kudo_path %> 
+
+
+
+    <footer>
+        <p>Kelsey Dickson</p>
+    </footer>
+
+</div>

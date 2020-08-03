@@ -1,0 +1,25 @@
+<%= link_to "Home", students_path,class:"home"%>
+
+
+<div class="space-students-show" >
+</div >
+<div class="student-name">
+<h3>Student: <%= @student.name%></h3>
+<h3>Grade: <%= @student.grade%></h3>
+</div>
+<hr class="dotted">
+
+<div class="kudo">
+    <% @student.kudos.each do |kudo|%>
+    <h4 class="italic-kudo">👏 <%= kudo.kudo%> </h4><br>
+    <h5>Teacher: <%= link_to kudo.teacher.teacher_name, teacher_path(kudo.teacher)%></h5>
+    <h5>Room: <%= kudo.teacher.room %></h5>
+    <h5> Subject: <%= kudo.teacher.subject%></h5><hr class="hr">
+
+    <%end%>
+
+</div>
+
+
+
+
